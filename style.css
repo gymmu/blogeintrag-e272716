@@ -1,11 +1,24 @@
-*,
-*::before,
-*::after {
-  box-sizing: content-box;
-}
-
 body {
   margin: 0;
-  background-color: lightgray;
-  font-family: sans-serif;
 }
+
+.element-with-background {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QmxhdHR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1600&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  color: black;
+  text-decoration: overline;
+
+}
+
+  
