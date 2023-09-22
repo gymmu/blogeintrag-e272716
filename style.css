@@ -1,11 +1,111 @@
-*,
-*::before,
-*::after {
-  box-sizing: content-box;
+
+@import url(https://fonts.google.com/specimen/Poppins);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: ''Poppins'' sans-serif;
 }
 
-body {
-  margin: 0;
-  background-color: lightgray;
-  font-family: sans-serif;
+
+.element-with-background {
+  height: 100vh;
+  background-image: url("https://images.unsplash.com/photo-1524055988636-436cfa46e59e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8UExhbnplbiUyMGhpbnRlcmdydW5kfGVufDB8fDB8fHww&auto=format&fit=crop&w=900&q=60");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+h1 {
+  color: black;
+  text-decoration: overline; 
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+  background-color: red; 
+} 
+
+ .header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.3rem 10%;
+  /*background: rgba(0, 0, 0, .1);*/
+  /*backdrop-filter: blur(50px);*/
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+  
+ }
+ .Nature{
+  font-size: 2rem;
+  color: #635c5c;
+  text-decoration: none;
+  font-weight: 700;
+
+ }
+
+ .navbar a {
+  font-size: 1.15rem;
+  color: #242323;
+  text-decoration: none;
+  font-weight: 500;
+  margin-left: 2.5rem;
+  
+ }
+
+.navbar {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 17.7rem;
+  background:rgba(0, 0, 0, .1);
+  backdrop-filter: blur(50px);
+}
+.navbar a {
+  display: block;
+  font-size: 1.8rem;
+  margin: 2.0rem 0;
+ text-align: center;
+}
+
+  h2{
+    color: rgb(2, 43, 20);
+    text-decoration: overline; 
+    text-align: left; 
+   
+  }
+  .scale {
+    animation: scale-anim 1s both ease-in-out infinite alternate;
+  }
+  
+  @keyframes scale-anim {
+    from {transform: scale(1)}
+    to {transform: scale(1.5)}
+  }
+
+#box {
+  background-color: rgb(127, 132, 132);
+  border: 5px solid black;
+  margin: 50px;
+  padding: 50px;
+  width: 500px;
+ 
+}
+
+
+
+
+
+  
