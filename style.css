@@ -83,10 +83,38 @@ ul {
   h2{
     color: rgb(2, 43, 20);
     text-decoration: overline; 
-    text-align: center; 
+    text-align: left; 
+   
+  }
+  .scale {
+    animation: scale-anim 1s both ease-in-out infinite alternate;
   }
   
+  @keyframes scale-anim {
+    from {transform: scale(1)}
+    to {transform: scale(1.5)}
+  }
+  .element-with-background {
+    height: 100vh;
+    background-image: url("https://images.unsplash.com/photo-1533038590840-1cde6e668a91?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8QmxhdHR8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=1600&q=60");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+#box {
+  background-color: rgb(127, 132, 132);
+  border: 5px solid black;
+  margin: 50px;
+  padding: 50px;
+  width: 500px;
+ 
+
+}
 
 
 
